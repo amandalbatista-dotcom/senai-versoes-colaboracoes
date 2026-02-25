@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Meta Básicas -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Plataforma profissional de gestão de tarefas com regras de negócio, controle de status e integração futura com API." />
+  <meta name="author" content="Sua Empresa" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="TaskPro - Gestão Profissional de Tarefas" />
+  <meta property="og:description" content="Organize, gerencie e acompanhe tarefas com regras de negócio inteligentes." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/hero.jpg" />
+
+  <title>Criação de Histórias</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Acessibilidade -->
+  <a href="#main-content" class="skip-link">Ir para o conteúdo principal</a>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container">
+      <img src="background_image.jpg" alt="Logo TaskPro" class="header_logo" />
+      
+      <nav class="nav" aria-label="Menu principal">
+        <ul class="nav__list">
+          <li><a href="#features" class="nav__link">Funcionalidades</a></li>
+          <li><a href="#rules" class="nav__link">Regras</a></li>
+          <li><a href="#contact" class="nav__link nav__link--cta">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">Gestão Inteligente de Histórias</h1>
+        <p class="hero__description">
+          Organize suas ideias!
+        </p>
+        <button class="button button--primary" id="ctaButton">
+          Começar Agora
+        </button>
+      </div>
+    </section>
+
+    <!-- Funcionalidades -->
+    <section id="features" class="features">
+      <h2 class="section-title">Funcionalidades</h2>
+
+      <div class="features__grid">
+        <article class="card">
+          <h3 class="card__title">Criação de Tarefas</h3>
+          <p class="card__text">Cadastro com validação automática.</p>
+        </article>
+
+        <article class="card">
+          <h3 class="card__title">Controle de Status</h3>
+          <p class="card__text">Status: Pendente, História Em Progresso, História em Revisão, Concluída.</p>
+        </article>
+
+        <article class="card">
+          <h3 class="card__title">Integração com Docs</h3>
+          <p class="card__text">Pronto para você salvar todos os seus projetos</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Regras de Negócio -->
+    <section id="rules" class="rules">
+      <h2 class="section-title">Regras de Negócio</h2>
+
+      <ul class="rules__list">
+        <li class="rules__item">✔ Uma história deve possuir nome/título obrigatório.</li>
+        <li class="rules__item">✔ Status só pode ser alterado em ordem lógica, a não ser em caso de revisão.</li>
+        <li class="rules__item">✔ Histórias concluídas podem ser editadas.</li>
+        <li class="rules__item">✔ Cada usuário pode ter até 100 histórias em progresso.</li>
+      </ul>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="contact">
+      <h2 class="section-title">Entre em Contato</h2>
+
+      <form class="form" id="contactForm" novalidate>
+        <div class="form__group">
+          <label for="name" class="form__label">Nome</label>
+          <input type="text" id="name" class="form__input" required />
+        </div>
+
+        <div class="form__group">
+          <label for="email" class="form__label">E-mail</label>
+          <input type="email" id="email" class="form__input" required />
+        </div>
+
+        <button type="submit" class="button button--secondary">
+          Enviar
+        </button>
+
+        <p class="form__message" id="formMessage" role="alert"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer__text">
+      © 2026 TaskPro. Todos os direitos reservados.
+    </p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

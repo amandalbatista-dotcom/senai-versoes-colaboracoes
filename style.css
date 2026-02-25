@@ -1,0 +1,139 @@
+/* =========================
+   VARIÁVEIS GLOBAIS
+========================= */
+:root {
+  --color-primary: #2563eb;
+  --color-secondary: #1e40af;
+  --color-bg: #f8fafc;
+  --color-text: #1e293b;
+  --color-white: #ffffff;
+  --border-radius: 8px;
+  --spacing: 1rem;
+  --transition: 0.3s ease;
+  --max-width: 1200px;
+  --font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Reset simples */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: rgb(247, 206, 168);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* Acessibilidade */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 0.5rem;
+}
+
+/* Header */
+.header {
+  background: var(--color-white);
+  padding: var(--spacing);
+}
+
+.header__container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--color-text);
+  transition: var(--transition);
+}
+
+.nav__link:hover,
+.nav__link--cta {
+  color: var(--color-primary);
+}
+
+/* Hero */
+.hero {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 1.8rem;
+}
+
+.hero__description {
+  margin: 1rem 0;
+}
+
+/* Botões */
+.button {
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius);
+  border: none;
+  cursor: pointer;
+}
+
+.button--primary {
+  background: gray;
+  color: white;
+}
+
+.button--secondary {
+  background: var(--color-secondary);
+  color: var(--color-white);
+}
+
+/* Cards */
+.features__grid {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  background: var(--color-white);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+  .features__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero__title {
+    font-size: 2.5rem;
+  }
+}
