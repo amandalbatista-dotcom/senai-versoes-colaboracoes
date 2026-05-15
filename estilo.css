@@ -1,0 +1,25 @@
+head {
+padding: 12px;
+background-color: orange;
+text-align: center;
+font-style: italic;
+}
+body{
+    background-color: orangered;
+}
+h1 {
+    color: orange;
+    text-align: center;
+    font-weight: bold;
+}
+button {
+    background-color: green;
+    color: orange;
+    text-align: center;
+    border-radius: 25px 25px 25px 25px;
+    margin: 60px;
+}
+
+img {
+size: 100px;
+}
